@@ -2,11 +2,11 @@
 
 import "./style.scss";
 
-const Card = (props) => {
-    const {text, img, desc, isBuy} = props.state;
+const Card = () => {
+    
     return (
         <div className="card">
-            {/* Card */}
+           Card
         </div>
     );
 };

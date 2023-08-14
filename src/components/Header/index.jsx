@@ -1,10 +1,16 @@
 
 import "./style.scss";
 
+import HeaderTop from "./HeaderTop";
+import Navbar from "./Navbar";
+
 const index = () => {
     return (
         <header>
-            <h1>Header</h1>
+            <div className="container">
+                <HeaderTop/>
+                <Navbar/>
+            </div>
         </header>
     );
 };
