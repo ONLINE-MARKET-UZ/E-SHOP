@@ -9,9 +9,6 @@ import cart from "../../assets/icons/cart.svg";
 
 import { Input, Select, Button } from "antd";
 
-const onChange = (value) => {
-    console.log(`selected ${value}`);
-};
 
 
 const HeaderTop = () => {
@@ -26,31 +23,12 @@ const HeaderTop = () => {
             <a href=""><img src={logo} alt="#" /></a>
             <div className="flex border border-blue-500 rounded-md">
                 <Input className="w-[406px] text-[16px] rounded-l-md rounded-none outline-none border-none" placeholder="Search" />
-                <Select
-                    className="text-[16px] color-bl"
-                    bordered={false}
-                    placeholder="All cattegory"
-                    optionFilterProp="children"
-                    onChange={onChange}
-                
-                    filterOption={(input, option) =>
-                        (option?.label ?? '').toLowerCase().includes(input.toLowerCase())
-                    }
-                    options={[
-                        {
-                            value: 'Automobiles',
-                            label: 'Automobiles',
-                        },
-                        {
-                            value: 'Clothes and wear',
-                            label: 'Clothes and wear',
-                        },
-                        {
-                            value: 'Home interiors',
-                            label: 'Home interiors',
-                        },
-                    ]}
-                />
+                <select className="outline-none text-[16px] border border-l-blue-500">
+                    <option value="All category" selected disabled>All category</option>
+                    <option value="Automobiles">Automobiles</option>
+                    <option value="Clothes and wear">Clothes and wear</option>
+                    <option value="Home interiors">Home interiors</option>
+                </select>
                 <Button default className="text-[16px] h-[40px] bg-blue-500 text-white border-none rounded-none rounded-r-md">
                     Search
                 </Button>
