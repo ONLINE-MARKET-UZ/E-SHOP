@@ -17,6 +17,13 @@ ul {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

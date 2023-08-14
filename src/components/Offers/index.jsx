@@ -1,26 +1,23 @@
-
-import "./style.scss";
-
-import CardOffer from "./CardOffer";
+import React from 'react';
+import CardOffer from './CardOffer';
 
 const index = () => {
-    return (
-        <section>
-            <div className='container mx-auto'>
-                <div className='offers'>
-                    <div className='offers_info'>
-
-                    </div>
-                    <ul>
-                        <li>
-                            <CardOffer/>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </section>
-    );
+  return (
+		<section className='pb-5'>
+			<div className="container">
+				<div className="offers">
+					<div className="offers_info">
+           					 {/* content */}
+          			</div>
+					<ul>
+						<li>
+             			 	<CardOffer/>
+             			</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default index;
