@@ -1,7 +1,7 @@
 
 
 import "./style.scss";
-import clothe from "../../../assets/images/clothe.png";
+
 const Card = ({case:{image, price, title}}) => {
     
     return (

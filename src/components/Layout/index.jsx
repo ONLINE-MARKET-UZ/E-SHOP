@@ -6,6 +6,7 @@ import Offers from "../Offers";
 import OrderForm from "../OrderForm";
 
 import RecommendItems from "../RecommendItems";
+import Subscribe from "../Subscribe";
 
 const index = () => {
     return (
@@ -14,6 +15,7 @@ const index = () => {
             <Offers/>
             <OrderForm/>
             <RecommendItems/>
+            <Subscribe/>
         </main>
     );
 };
